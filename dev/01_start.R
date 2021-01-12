@@ -15,13 +15,14 @@
 ## Add meta data about your application
 golem::fill_desc(
   pkg_name = "theoffice", # The Name of the package containing the App 
-  pkg_title = "PKG_TITLE", # The Title of the package containing the App 
-  pkg_description = "PKG_DESC.", # The Description of the package containing the App 
-  author_first_name = "AUTHOR_FIRST", # Your First Name
-  author_last_name = "AUTHOR_LAST", # Your Last Name
-  author_email = "AUTHOR@MAIL.COM", # Your Email
-  repo_url = NULL # The URL of the GitHub Repo (optional) 
-)     
+  pkg_title = "THE_OFFICE_GOLEM", # The Title of the package containing the App 
+  pkg_description = "Shiny Application with golem to Analyze The Office.", # The Description of the package containing the App 
+  author_first_name = "Dwight", # Your First Name
+  author_last_name = "Schrute", # Your Last Name
+  author_email = "dwightkschrute@stoltzmanconstuling.com", # Your Email
+  repo_url = "https://github.com/Stoltzman-Consulting/theoffice.git" # The URL of the GitHub Repo (optional)
+  )
+  
 
 ## Set {golem} options ----
 golem::set_golem_options()

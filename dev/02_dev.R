@@ -15,12 +15,20 @@
 
 ## Dependencies ----
 ## Add one line by package you want to add as dependency
-usethis::use_package( "thinkr" )
+usethis::use_package( "shinydashboard" )
 
 ## Add modules ----
 ## Create a module infrastructure in R/
-golem::add_module( name = "name_of_module1" ) # Name of the module
-golem::add_module( name = "name_of_module2" ) # Name of the module
+golem::add_module( name = "sales_overview" )
+golem::add_module( name = "sales_seasons" )
+golem::add_module( name = "ratings_overview" ) 
+golem::add_module( name = "ratings_seasons" ) 
+golem::add_module( name = "ratings_episodes" ) 
+golem::add_module( name = "ratings_characters" )
+golem::add_module( name = "ratings_writers" ) 
+golem::add_module( name = "ratings_directors" ) 
+golem::add_module( name = "script_analysis" ) 
+
 
 ## Add helper functions ----
 ## Creates ftc_* and utils_*

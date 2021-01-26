@@ -10,7 +10,19 @@
 mod_sales_overview_ui <- function(id){
   ns <- NS(id)
   tagList(
- 
+shinydashboard::box(
+  width = 12,
+  fluidRow(
+    column(
+      width = 6,
+      DT::DTOutput(ns("table_example_overview"))
+    ),
+    column(
+    width = 6,
+    plotOutput(ns("plot_example_overview"))
+  )
+  )
+  ) 
   )
 }
     
@@ -20,6 +32,14 @@ mod_sales_overview_ui <- function(id){
 mod_sales_overview_server <- function(input, output, session){
   ns <- session$ns
  
+  output$table_example_overview <- DT::renderDT(
+    shinipsum::random_DT(nrow = 5, ncol = 6)
+  )
+  
+  output$plot_example_overview <- renderPlot(
+    shinipsum::random_ggplot()
+  )
+  
 }
     
 ## To be copied in the UI

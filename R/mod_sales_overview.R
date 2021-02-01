@@ -15,11 +15,11 @@ shinydashboard::box(
   fluidRow(
     column(
       width = 6,
-      DT::DTOutput(ns("table_example_overview"))
+      DT::DTOutput(ns("table_example"))
     ),
     column(
     width = 6,
-    plotOutput(ns("plot_example_overview"))
+    plotOutput(ns("plot_example"))
   )
   )
   ) 
@@ -32,11 +32,11 @@ shinydashboard::box(
 mod_sales_overview_server <- function(input, output, session){
   ns <- session$ns
  
-  output$table_example_overview <- DT::renderDT(
+  output$table_example <- DT::renderDT(
     shinipsum::random_DT(nrow = 5, ncol = 6)
   )
   
-  output$plot_example_overview <- renderPlot(
+  output$plot_example <- renderPlot(
     shinipsum::random_ggplot()
   )
   

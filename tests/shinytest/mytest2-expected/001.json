@@ -1,0 +1,59 @@
+{
+  "input": {
+    "obs_count": 10,
+    "sidebarCollapsed": false,
+    "sidebarItemExpanded": null
+  },
+  "output": {
+    "sales_overview_ui_1-plot_example": {
+      "src": "[image data sha1: 61aca97c04faac8e48273712fe057faf28e9df59]",
+      "width": 268,
+      "height": 400,
+      "coordmap": {
+        "panels": [
+          {
+            "panel": 1,
+            "row": 1,
+            "col": 1,
+            "panel_vars": {
+
+            },
+            "log": {
+              "x": null,
+              "y": null
+            },
+            "domain": {
+              "left": 1998.7,
+              "right": 2016.3,
+              "bottom": -0.1,
+              "top": 13.1
+            },
+            "mapping": {
+              "x": "year",
+              "y": "month",
+              "fill": "median"
+            },
+            "range": {
+              "left": 40.4669939067266,
+              "right": 188.478444302703,
+              "bottom": 368.509178173071,
+              "top": 5.47945205479452
+            }
+          }
+        ],
+        "dims": {
+          "width": 268,
+          "height": 400
+        }
+      }
+    },
+    "sales_overview_ui_1-table_example": [
+      "argument is of length zero",
+      "c(\"while (nrow(df) < nrow) {\", \"    df <- rbind(df, df)\", \"}\")",
+      "NULL"
+    ]
+  },
+  "export": {
+
+  }
+}
